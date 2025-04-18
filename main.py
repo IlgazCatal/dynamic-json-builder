@@ -12,6 +12,7 @@ def main():
             print("Json not found, exiting")
             with open("dumps.json", "w") as f:
                 json.dump(data, f, indent=4)
+                f.write('\n')
             break
 
 if __name__ == "__main__":
